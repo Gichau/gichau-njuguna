@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal website template</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de3fd053a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark fa-beat" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars fa-beat" onclick="openmenu()"></i>
+        </nav>
+        <div id="header-text">
+            <h1>Hi I'm <br><span>Samuel</span> Njuguna</h1>
+        </div>
+    </div>
+  </div>  
+  <!-------------------------------- about --------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a skilled static web developer with a passion for crafting seamless and engaging online experiences. A natural leader and problem solver by nature, I thrive in finding innovative solutions that bridge the gap between creativity and functionality. With a background in customer support, I understand the vital role of user-centric design in creating meaningful interactions. Additionally, my experience in annotation has honed my attention to detail and precision, ensuring every element is perfectly in place. Join me as I combine my expertise to build captivating websites that leave a lasting impact.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                        <p class="tab-links" onclick="opentab('training')">Training </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Customer service</span><br>Seamless Digital Customer Service: As a dedicated Digital Customer Service Agent, I excel in providing exceptional support and assistance to users across digital platforms. With a deep understanding of customer needs and effective communication skills, I ensure that every interaction is positive and solutions are delivered promptly. I thrive in delivering top-notch service in the digital realm, creating satisfied and loyal customers. </li>
+                            <li><span>Web Delevolpent</span><br>Elevating Online Presence Through Static Web Design: Crafting visually captivating and user-friendly websites is my forte. With a keen eye for aesthetics and a mastery of HTML, CSS, and JavaScript, I specialize in creating static websites that make a lasting impression. Your digital identity will come to life with elegantly designed, fast-loading, and responsive web pages that engage and inspire visitors</li>
+                            <li><span>Data labeling / Annotation</span><br>Precision in Data Labeling and Annotation: With a meticulous eye for detail, I specialize in data labeling and annotation, a critical process that fuels machine learning and AI advancements. My expertise ensures that datasets are accurately labeled, enabling algorithms to learn and perform effectively. I take pride in contributing to the development of cutting-edge technologies by providing high-quality annotated data that serves as the foundation for innovation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Team Lead at Cloudfactory KE</li>
+                            <li><span>2017 - 2019</span><br>Data labeller at Fiverr and Upwork</li>
+                            <li><span>2016 - 2017</span><br>Internship at Kenyatta University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Bsc Information and Communication Technology</li>
+                            <li><span>2013</span><br>O levels</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="training">
+                        <ul>
+                            <li><span>2023</span><br>Digital Customer service at Generation Kenya</li>
+                            <li><span>2022</span><br>Software Engineering program at ALX africa - ongoing</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- services ------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting Digital Experiences: I specialize in static web development, turning visions into visually captivating and functional websites. With meticulous attention to detail and a creative approach, I transform ideas into beautifully designed, responsive, and user-friendly sites. Let's collaborate to bring your online presence to life and create a lasting impression in the digital world</p>
+                    <a href="https://college-website-tutorial.netlify.app/" target="_blank">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Digital Customer service</h2>
+                    <p>Elevating Customer Experiences: As a seasoned Customer Service Agent, I am dedicated to delivering exceptional support tailored to your needs. With a passion for problem-solving, I am committed to addressing your inquiries, resolving issues, and ensuring your satisfaction. Your success and happiness are my top priorities, and I'm here to provide the assistance you deserve.</p>
+                    <a href="http://">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Data labelling and Annotation</h2>
+                    <p>Precision in Data: As an experienced professional in data labeling and annotation, I bring meticulous attention to detail to ensure the accuracy and quality of labeled data. With a deep understanding of the importance of clean and well-annotated data for machine learning and AI projects, I am dedicated to enhancing the performance and reliability of your data-driven solutions. Let's work together to turn raw data into valuable insights</p>
+                    <a href="https://www.fiverr.com/s/44EaVk" target="_blank">learn more</a>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------------- Portfolio --------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-6.jpg">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>College website template</p>
+                        <a href="https://college-website-tutorial.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Customer service</h3>
+                        <p>Elevating Customer Experiences: As a seasoned Customer Service Agent,</p>
+                        <a href="http://"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.jpg">
+                    <div class="layer">
+                        <h3>Annotation and data labelling</h3>
+                        <p>Image/video and text annotation</p>
+                        <a href="https://www.fiverr.com/sirmesam/precisely-annotate-and-label-your-ai-training" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i><a>
+                    </div> 
+                </div>
+            <!-- </div>
+            <a href="http://" class="btn">See More</a>
+        </div> -->
+    </div>
+
+    <!-------------------- contact ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Get in Touch</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sirmeawesome@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>254792150456</p>
+                    <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/samuelgnjuguna/"><i class="fa-brands fa-linkedin"></i></a> 
+                       <a href="https://twitter.com/sirmeizme" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                       <a href="https://github.com/Gichau"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Gichau Njuguna <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmb3-0RzpqzNkI6m_-FOTU775OgUhixA-Pq3QFXGk78g6ar__ipk4A6c8hYrXwkpJCTg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
