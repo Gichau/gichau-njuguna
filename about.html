@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gichau Njuguna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de3fd053a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark fa-beat" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars fa-beat" onclick="openmenu()"></i>
+        </nav>
+        <!-- <div id="header-text">
+            <h1>About Me</h1>
+        </div> -->
+    </div>
+  </div>  
+  <!-------------------------------- about --------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">The Human Side</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Hobbies and Interests </p>
+                        <p class="tab-links" onclick="opentab('experience')">Personal Journey and Values </p>
+                        <p class="tab-links" onclick="opentab('education')">Inspirations and Role Models </p>
+                        <p class="tab-links" onclick="opentab('training')">Future Goals and Aspirations </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Exploring the Digital Realm</span><br>Just as I craft digital experiences, I'm an avid explorer of the vast online universe. Internet surfing isn't just a pastime; it's an opportunity to discover new ideas, trends, and inspirations from around the globe. From tech blogs to creative platforms, I'm always on the lookout for the next digital adventure.</li>
+                            <li><span>Cycling Through Adventures</span><br>When the world calls, I answer on two wheels. Biking is my ticket to freedom and exploration. Whether it's a leisurely ride through scenic routes or conquering challenging trails, the thrill of the ride and the wind in my hair never fail to invigorate me.</li>
+                            <li><span>Football Fanatic at Heart</span><br>Football isn't just a sport; it's a passion that runs deep. On weekends, you'll find me cheering passionately for my favorite team, analyzing matches, and discussing strategies with fellow fans. The camaraderie of the football community and the excitement of the game bring a special kind of joy to my life.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>The Path Less Traveled</span><br>My journey into the world of web development took a few unexpected turns. While pursuing my degree in Information and Communication Technology, I found myself drawn to the world of customer service. This unexpected detour helped me cultivate exceptional communication skills and a deep appreciation for understanding user needs.</li>
+                            <li><span>Striving for Impact</span><br>My journey is far from over. Looking ahead, I aspire to leverage my skills and experiences to create digital solutions that not only function seamlessly but also leave a lasting impact on users. My goal is to bridge the gap between aesthetics and functionality, making the online world a more engaging and meaningful place.Thank you for taking the time to get to know the person behind the pixels. Feel free to reach out – I'd love to connect and collaborate on projects that align with my journey and values.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Crafting Impactful Experiences</span><br>As I continue my journey in web development, my primary goal is to create digital experiences that go beyond aesthetics and functionality. I want to craft websites that resonate with users, leaving a memorable impact. This means paying meticulous attention to design, user interface, and user experience to create online spaces that truly engage and inspire.</li>
+                            <li><span>Expanding Learning Horizons</span><br>I'm a firm believer in the power of continuous learning. In the coming years, I'm dedicated to expanding my skill set and exploring new avenues within the realm of technology. Whether it's delving deeper into front-end frameworks, diving into UI/UX design principles, or even exploring the potential of emerging technologies, I'm committed to staying at the forefront of the ever-evolving tech landscape.</li>
+                            <li><span>Giving Back</span><br>As my journey progresses, I want to pay forward the knowledge and experiences I've gained. This includes mentoring aspiring developers, contributing to open-source projects, and potentially leading workshops that empower others to explore the exciting world of web development.</li>
+                            <li><span>Collaborative Ventures</span><br>One of my core values is collaboration. I'm excited about the prospect of partnering with fellow developers, designers, and innovators to bring fresh ideas to life. I see myself working on projects that challenge conventions, push boundaries, and ultimately contribute to a more dynamic and user-centric digital world.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="training">
+                        <ul>
+                            <li><span>Everyday Heroes: Unsung Influences</span><br>While well-known figures inspire me, everyday heroes also leave a mark. From teachers who ignited my passion for learning to colleagues who shared their expertise, these unsung influences remind me that inspiration can be found in the people we interact with daily.These role models and sources of inspiration remind me that the journey of growth is a shared one. Their stories encourage me to embrace innovation, push boundaries, and foster a spirit of continuous learning.</li>
+                            <li><span>The Open-Source Community: Collective Innovation</span><br>The spirit of collaboration within the open-source community is a constant source of inspiration. Witnessing developers from around the world come together to create impactful solutions is a testament to the power of shared knowledge and collaboration. I'm motivated by their dedication to advancing technology for the greater good.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        <div class="copyright">
+            <p>© 2023 Gichau Njuguna <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmb3-0RzpqzNkI6m_-FOTU775OgUhixA-Pq3QFXGk78g6ar__ipk4A6c8hYrXwkpJCTg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

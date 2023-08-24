@@ -121,10 +121,11 @@ nav ul li a:hover::after{
 .tab-content ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 18px;
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -333,7 +334,7 @@ nav .fa-bars{
 }
 @media screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/phone-background2.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -341,6 +342,7 @@ nav .fa-bars{
     }
     .header-text h1{
         font-size: 30px;
+        align-content: center;
     }
     nav .fa-bars{
         display: block;
